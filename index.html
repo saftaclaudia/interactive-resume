@@ -1,49 +1,510 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Claudia Popescu - CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claudia Popescu - Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="cv-header" id="navbar">
+      <div class="header-photo">
+        <div class="photo-circle">
+          <!-- <span class="photo-initials">CP</span> -->
+          <img src="assets/avatar.jpeg" alt="Claudia Popescu" />
+        </div>
+      </div>
+      <div class="header-info">
+        <h1 class="header-name">
+          <span class="name-first">Claudia</span
+          ><span class="name-last">Popescu</span>
+        </h1>
+        <p class="header-title">Frontend Developer · Timișoara, România</p>
+      </div>
+      <div class="header-contact">
+        <p class="contact-phone">+40 761 947 965</p>
+        <a href="mailto:saftaclaudia27@yahoo.com" class="contact-email">
+          saftaclaudia27@yahoo.com
+        </a>
 
-<header>
-    <h1>Claudia Popescu</h1>
-    <p>Frontend Developer</p>
-</header>
+        <a
+          href="https://github.com/saftaclaudia"
+          target="_blank"
+          class="contact-github"
+        >
+          https://github.com/saftaclaudia
+        </a>
+        <a
+          href="https://saftaclaudia.github.io/my-portfolio"
+          target="_blank"
+          class="contact-github"
+        >
+          https://saftaclaudia.github.io/my-portfolio/
+        </a>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Junior Frontend Developer with experience in React, TypeScript and modern web apps.
-    </p>
-</section>
+        <a
+          href="assets/CV-Claudia-Popescu .pdf"
+          download="CV-Claudia-Popescu.pdf"
+          class="btn-download"
+        >
+          <span> ↓ Download PDF </span>
+        </a>
+      </div>
+    </header>
+    <hr class="header-divider" />
 
-<section id="experience">
-    <h2>Experience</h2>
+    <main class="cv-main">
+      <div class="col-left">
+        <section id="profile" class="cv-section">
+          <h2 class="section-title">Profile</h2>
+          <p class="profile-text">
+            Frontend Developer with experience in
+            <strong>JavaScript</strong>, <strong>TypeScript</strong>,
+            <strong>React</strong> and responsive web applications, complemented
+            by basic full-stack skills (Node.js, Express, MongoDB). Passionate
+            about visual design and digital art (watercolor, acrylic, and
+            digital painting), with a strong focus on UI and user experience.
+            Background in psychology and legal consulting, bringing strong
+            communication and problem-solving skills.
+          </p>
+        </section>
+        <section id="experience" class="cv-section">
+          <h2 class="section-title">Experience</h2>
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Bucharest Informatic M IT</h3>
+                <p class="exp-role">Frontend Developer Intern</p>
+              </div>
 
-    <div class="job">
-        <h3>Frontend Developer Intern</h3>
-        <p>2026 - Present</p>
-    </div>
+              <div class="exp-meta">
+                <span class="exp-period">Nov 2025 – Ian 2026</span
+                ><span class="exp-location">Remote</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Developed frontend features using React 18, TypeScript, and Vite
+                in a real-world fintech platform
+              </li>
+              <li>
+                Built dynamic UI components using hooks (useState, useEffect)
+                and reusable architecture
+              </li>
+              <li>
+                Implemented Redux Toolkit for state management (authentication,
+                client data, notifications)
+              </li>
+              <li>
+                Developed routing with React Router, including protected routes
+                and role-based layouts
+              </li>
+              <li>
+                Built responsive UI using Tailwind CSS and modern component
+                libraries (Shadcn/UI, Headless UI)
+              </li>
+              <li>
+                Implemented forms with React Hook Form & Zod for validation and
+                data consistency
+              </li>
+              <li>
+                Collaborated on full-stack architecture using Node.js & Express
+                APIs
+              </li>
+              <li>
+                Contributed to features such as loan application flows,
+                dashboards, and risk evaluation tools
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              React 18 · TypeScript · Redux · Tailwind · Vite · Zod
+            </p>
+          </article>
 
-    <div class="job">
-        <h3>Legal Advisor</h3>
-        <p>2007 - Present</p>
-    </div>
-</section>
+          <hr class="item-divider" />
 
-<section id="skills">
-    <h2>Tech Stack</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, TypeScript</li>
-        <li>Node.js, MongoDB</li>
-    </ul>
-</section>
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">SkillBrain</h3>
+                <p class="exp-role">Frontend Developer Trainee</p>
+              </div>
 
-<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+              <div class="exp-meta">
+                <span class="exp-period">May 2025 – Oct 2025</span
+                ><span class="exp-location">Remote</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Completed accredited Frontend Developer program</li>
+              <li>
+                Built multiple real-world projects using React, JavaScript,
+                HTML, CSS
+              </li>
+              <li>
+                Gained strong foundations in component-based architecture and
+                responsive design
+              </li>
+              <li>Worked with modern tools: Git, GitHub, Vite, Tailwind CSS</li>
+            </ul>
+            <p class="exp-tags-label">HTML· CSS · JavaScript · React · Git</p>
+          </article>
 
-<script src="script.js"></script>
-</body>
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Timişoara City Hall</h3>
+
+                <p class="exp-role">Tax Advisor</p>
+              </div>
+
+              <div class="exp-meta">
+                <span class="exp-period">Oct 2007 – Present</span
+                ><span class="exp-location">Timişoara</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Handled and resolved legal appeals against fiscal administrative
+                decisions, ensuring compliance with applicable legislation
+              </li>
+              <li>
+                Provided legal advisory support to multiple departments,
+                contributing to efficient internal operations
+              </li>
+              <li>
+                Managed and updated the institution’s website, ensuring accurate
+                and timely publication of legal information and documents
+              </li>
+              <li>
+                Participated in internal audit activities and contributed to the
+                development and improvement of internal procedures
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Legal Compliance · Fiscal Law · Public Administration · Audit ·
+              Web Management
+            </p>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Timişoara SC Psi Praxis SRL</h3>
+
+                <p class="exp-role">Psychologist</p>
+              </div>
+
+              <div class="exp-meta">
+                <span class="exp-period">Sep 2005 - Aug 2007</span
+                ><span class="exp-location">Timişoara</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Conducted psychological evaluations for driver’s license
+                certification and safety compliance
+              </li>
+              <li>
+                Performed pre-employment and periodic psychological assessments
+                for occupational health (medicine of work)
+              </li>
+              <li>
+                Selected, administered, and interpreted standardized
+                psychological testing instruments
+              </li>
+              <li>
+                Prepared psychological reports and official certifications based
+                on assessment results
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Psychological Assessment · Reporting · Occupational Health
+            </p>
+          </article>
+        </section>
+
+        <section id="projects" class="cv-section">
+          <h2 class="section-title">Projects</h2>
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">MediTrack</h3>
+                <p class="exp-role">Health Management App · Full-Stack</p>
+              </div>
+              <div class="exp-meta">
+                <a
+                  href="https://github.com/saftaclaudia/meditrack-app"
+                  target="_blank"
+                  class="project-link"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Built a full-stack health management app for women 40+, focused
+                on preventive healthcare
+              </li>
+              <li>
+                Implemented medical exam tracking with deadline notifications
+                and appointment scheduling
+              </li>
+              <li>
+                Developed a personal medical record system for storing and
+                managing test results
+              </li>
+              <li>
+                Built a calorie tracking feature with daily intake logging,
+                personalized recommendations, and consumption history
+              </li>
+              <li>
+                Secured backend with JWT authentication, MongoDB + Mongoose for
+                data persistence, Redux for state management
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Next.js · React · TypeScript · Node.js · MongoDB · Redux ·
+              Tailwind · JWT
+            </p>
+            <p class="wip-badge">● In progress</p>
+          </article>
+        </section>
+
+        <section id="education" class="cv-section">
+          <h2 class="section-title">Education</h2>
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">SkillBrain</h3>
+                <p class="exp-role">Degree - Frontend Developer</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">Mai – Oct 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">West University of Timisoara</h3>
+                <p class="exp-role">
+                  Master's degree - Industrial &amp; Organizational Psychology
+                </p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">2005 – 2007</span>
+              </div>
+            </div>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">West University of Timisoara</h3>
+                <p class="exp-role">Bachelor’s Degree - Psychology</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">2001 – 2005</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <aside class="col-right">
+        <section id="skills" class="cv-section">
+          <h2 class="section-title">Core Skills</h2>
+          <div class="skills-group">
+            <h4 class="skills-group-title">Frontend</h4>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript </span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"> TypeScript</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CSS / Tailwind / Sass</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"> Next.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Redux Toolkit</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h4 class="skills-group-title">Backend &amp; DB</h4>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js / Express</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">REST APIs / JWT</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4 class="skills-group-title">Tools</h4>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Vite / VS Code</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4 class="skills-group-title">Languages</h4>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Română</span>
+                <span class="skill-level">Native</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">English</span>
+                <span class="skill-level">Fluent</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Deutsch</span>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="20"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <footer>
+      <p class="footer-text">Claudia Popescu</p>
+      <p class="footer-email">saftaclaudia27@yahoo.com</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
