@@ -47,10 +47,10 @@ window.addEventListener("scroll", function () {
 });
 
 const skillItems = document.querySelectorAll(".skill-item");
-skillItems.forEach(function (iten) {
-  const fill = iten.querySelector(".skill-fill");
+skillItems.forEach(function (item) {
+  const fill = item.querySelector(".skill-fill");
   if (fill) {
     const level = fill.dataset.level;
-    iten.setAttribute("data-tooltip", level + "%");
+    item.setAttribute("data-tooltip", level + "%");
   }
 });

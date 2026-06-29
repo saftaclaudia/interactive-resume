@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claudia Popescu - Frontend Developer</title>
+    <meta
+      name="description"
+      content="Frontend Developer specializing in React 18, TypeScript, and Next.js, with hands-on experience in fintech. Based in Timișoara, România."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%234e8b8b'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' fill='white' font-family='serif' font-style='italic'>C</text></svg>"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,12 +19,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="cv-header" id="navbar">
       <div class="header-photo">
         <div class="photo-circle">
-          <!-- <span class="photo-initials">CP</span> -->
           <img src="assets/avatar.jpeg" alt="Claudia Popescu" />
         </div>
       </div>
@@ -28,28 +36,28 @@
         <p class="header-title">Frontend Developer · Timișoara, România</p>
       </div>
       <div class="header-contact">
-        <p class="contact-phone">+40 761 947 965</p>
+        <a href="tel:+40761947965" class="contact-phone">+40 761 947 965</a>
         <a href="mailto:saftaclaudia27@yahoo.com" class="contact-email">
           saftaclaudia27@yahoo.com
         </a>
-
         <a
           href="https://github.com/saftaclaudia"
           target="_blank"
+          rel="noopener noreferrer"
           class="contact-github"
         >
-          https://github.com/saftaclaudia
+          github.com/saftaclaudia
         </a>
         <a
           href="https://saftaclaudia.github.io/my-portfolio"
           target="_blank"
+          rel="noopener noreferrer"
           class="contact-github"
         >
-          https://saftaclaudia.github.io/my-portfolio/
+          saftaclaudia.github.io/my-portfolio
         </a>
-
         <a
-          href="assets/Claudia_Popescu_Frontend_CV.pdf"
+          href="assets/Claudia_Popescu_CV_updated.pdf"
           download="CV-Claudia-Popescu.pdf"
           class="btn-download"
         >
@@ -64,178 +72,75 @@
         <section id="profile" class="cv-section">
           <h2 class="section-title">Profile</h2>
           <p class="profile-text">
-            Frontend Developer with experience in
-            <strong>JavaScript</strong>, <strong>TypeScript</strong>,
-            <strong>React</strong> and responsive web applications, complemented
-            by basic full-stack skills (Node.js, Express, MongoDB). Passionate
-            about visual design and digital art (watercolor, acrylic, and
-            digital painting), with a strong focus on UI and user experience.
-            Background in psychology and legal consulting, bringing strong
-            communication and problem-solving skills.
+            Frontend Developer specializing in <strong>React 18</strong>,
+            <strong>TypeScript</strong>, and <strong>Next.js</strong>, with
+            hands-on experience shipping production features in a fintech
+            environment and building full-stack applications from scratch.
+            Brings a rare combination of technical precision and deep user
+            empathy — shaped by a background in psychology and institutional
+            advisory — that translates directly into clean, accessible,
+            human-centered interfaces. Committed to writing maintainable code,
+            delivering polished UIs, and continuously expanding full-stack
+            capabilities.
           </p>
         </section>
+
         <section id="experience" class="cv-section">
           <h2 class="section-title">Experience</h2>
           <article class="exp-item">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 class="exp-company">Bucharest Informatic M IT</h3>
+                <h3 class="exp-company">Informatic M IT</h3>
                 <p class="exp-role">Frontend Developer Intern</p>
+                <p class="exp-project">
+                  Project: VIVE-CREDIT — Full-Lifecycle Fintech Loan Platform
+                </p>
               </div>
-
               <div class="exp-meta">
-                <span class="exp-period">Nov 2025 – Ian 2026</span
-                ><span class="exp-location">Remote</span>
+                <span class="exp-period">Nov 2025 – Jan 2026</span
+                ><span class="exp-location">Bucharest, Romania</span>
               </div>
             </div>
             <ul class="exp-bullets">
               <li>
-                Developed frontend features using React 18, TypeScript, and Vite
-                in a real-world fintech platform
+                Contributed to a production fintech platform covering the entire
+                loan lifecycle — from client onboarding and identity checks
+                (KYC) to loan application, risk assessment, and portfolio
+                oversight — recognised as one of the top-performing interns by
+                management
               </li>
               <li>
-                Built dynamic UI components using hooks (useState, useEffect)
-                and reusable architecture
+                Delivered React 18 + TypeScript features with Vite, building
+                reusable component architecture and custom hooks (useState,
+                useEffect, useCallback) across loan management dashboards
               </li>
               <li>
-                Implemented Redux Toolkit for state management (authentication,
-                client data, notifications)
+                Implemented Redux Toolkit for centralised state management
+                covering authentication flows, client profile data, and
+                real-time notifications, ensuring consistency across protected
+                routes
               </li>
               <li>
-                Developed routing with React Router, including protected routes
-                and role-based layouts
+                Built a role-based routing system with React Router v7
+                (administrator, loan officer, client layouts); styled responsive
+                UIs with Tailwind CSS, Shadcn/UI, and Headless UI
               </li>
               <li>
-                Built responsive UI using Tailwind CSS and modern component
-                libraries (Shadcn/UI, Headless UI)
-              </li>
-              <li>
-                Implemented forms with React Hook Form & Zod for validation and
-                data consistency
-              </li>
-              <li>
-                Collaborated on full-stack architecture using Node.js & Express
-                APIs
-              </li>
-              <li>
-                Contributed to features such as loan application flows,
-                dashboards, and risk evaluation tools
+                Collaborated with the backend team on Node.js &amp; Express REST
+                APIs with TypeScript, CORS configuration, and data pipeline
+                integration for risk evaluation dashboards
               </li>
             </ul>
             <p class="exp-tags-label">
-              React 18 · TypeScript · Redux · Tailwind · Vite · Zod
-            </p>
-          </article>
-
-          <hr class="item-divider" />
-
-          <article class="exp-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <h3 class="exp-company">SkillBrain</h3>
-                <p class="exp-role">Frontend Developer Trainee</p>
-              </div>
-
-              <div class="exp-meta">
-                <span class="exp-period">May 2025 – Oct 2025</span
-                ><span class="exp-location">Remote</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>Completed accredited Frontend Developer program</li>
-              <li>
-                Built multiple real-world projects using React, JavaScript,
-                HTML, CSS
-              </li>
-              <li>
-                Gained strong foundations in component-based architecture and
-                responsive design
-              </li>
-              <li>Worked with modern tools: Git, GitHub, Vite, Tailwind CSS</li>
-            </ul>
-            <p class="exp-tags-label">HTML· CSS · JavaScript · React · Git</p>
-          </article>
-
-          <hr class="item-divider" />
-
-          <article class="exp-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <h3 class="exp-company">Timişoara City Hall</h3>
-
-                <p class="exp-role">Tax Advisor</p>
-              </div>
-
-              <div class="exp-meta">
-                <span class="exp-period">Oct 2007 – Present</span
-                ><span class="exp-location">Timişoara</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>
-                Handled and resolved legal appeals against fiscal administrative
-                decisions, ensuring compliance with applicable legislation
-              </li>
-              <li>
-                Provided legal advisory support to multiple departments,
-                contributing to efficient internal operations
-              </li>
-              <li>
-                Managed and updated the institution’s website, ensuring accurate
-                and timely publication of legal information and documents
-              </li>
-              <li>
-                Participated in internal audit activities and contributed to the
-                development and improvement of internal procedures
-              </li>
-            </ul>
-            <p class="exp-tags-label">
-              Legal Compliance · Fiscal Law · Public Administration · Audit ·
-              Web Management
-            </p>
-          </article>
-
-          <hr class="item-divider" />
-
-          <article class="exp-item">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <h3 class="exp-company">Timişoara SC Psi Praxis SRL</h3>
-
-                <p class="exp-role">Psychologist</p>
-              </div>
-
-              <div class="exp-meta">
-                <span class="exp-period">Sep 2005 - Aug 2007</span
-                ><span class="exp-location">Timişoara</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>
-                Conducted psychological evaluations for driver’s license
-                certification and safety compliance
-              </li>
-              <li>
-                Performed pre-employment and periodic psychological assessments
-                for occupational health (medicine of work)
-              </li>
-              <li>
-                Selected, administered, and interpreted standardized
-                psychological testing instruments
-              </li>
-              <li>
-                Prepared psychological reports and official certifications based
-                on assessment results
-              </li>
-            </ul>
-            <p class="exp-tags-label">
-              Psychological Assessment · Reporting · Occupational Health
+              React 18 · TypeScript · Redux Toolkit · React Router v7 · Tailwind
+              · Shadcn/UI · Zod · Vite · Node.js · Express
             </p>
           </article>
         </section>
 
         <section id="projects" class="cv-section">
           <h2 class="section-title">Projects</h2>
+
           <article class="exp-item">
             <div class="exp-header">
               <div class="exp-title-group">
@@ -246,39 +151,99 @@
                 <a
                   href="https://github.com/saftaclaudia/meditrack-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="project-link"
                 >
                   GitHub →
+                </a>
+                <span class="exp-period">Jan 2026 – Present</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Built a full-stack health tracking application with React,
+                TypeScript, and Next.js, designed for women 40+ with a focus on
+                preventive healthcare and medical exam management
+              </li>
+              <li>
+                Designed and implemented a Node.js / Express REST API with JWT +
+                bcryptjs authentication, Mongoose data models, and MongoDB for
+                medical documents, notifications, and appointment history
+              </li>
+              <li>
+                Integrated Redux Toolkit for async state management; implemented
+                dark/light mode theming with Tailwind CSS and a responsive
+                layout across all device sizes
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Next.js · React · TypeScript · Node.js · MongoDB · Mongoose ·
+              Redux · Tailwind · JWT · bcryptjs
+            </p>
+            <p class="wip-badge">● In progress</p>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Interactive Resume Website</h3>
+                <p class="exp-role">Personal Project</p>
+              </div>
+              <div class="exp-meta">
+                <a
+                  href="https://saftaclaudia.github.io/interactive-resume"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live →
                 </a>
               </div>
             </div>
             <ul class="exp-bullets">
               <li>
-                Built a full-stack health management app for women 40+, focused
-                on preventive healthcare
-              </li>
-              <li>
-                Implemented medical exam tracking with deadline notifications
-                and appointment scheduling
-              </li>
-              <li>
-                Developed a personal medical record system for storing and
-                managing test results
-              </li>
-              <li>
-                Built a calorie tracking feature with daily intake logging,
-                personalized recommendations, and consumption history
-              </li>
-              <li>
-                Secured backend with JWT authentication, MongoDB + Mongoose for
-                data persistence, Redux for state management
+                Single-page app featuring IntersectionObserver-triggered skill
+                bar animations, staggered scroll reveals, dynamic navbar, and
+                downloadable PDF export — fully responsive with zero external
+                dependencies
               </li>
             </ul>
             <p class="exp-tags-label">
-              Next.js · React · TypeScript · Node.js · MongoDB · Redux ·
-              Tailwind · JWT
+              HTML · CSS · JavaScript · IntersectionObserver API
             </p>
-            <p class="wip-badge">● In progress</p>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Portfolio Website</h3>
+                <p class="exp-role">Personal Project</p>
+              </div>
+              <div class="exp-meta">
+                <a
+                  href="https://saftaclaudia.github.io/my-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live →
+                </a>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Modern portfolio built with component-based architecture
+                showcasing projects, tech stack, and live demos — clean,
+                responsive, optimized for both mobile and desktop
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              HTML · CSS · JavaScript · Responsive Design
+            </p>
           </article>
         </section>
 
@@ -289,12 +254,20 @@
             <div class="exp-header">
               <div class="exp-title-group">
                 <h3 class="exp-company">SkillBrain</h3>
-                <p class="exp-role">Degree - Frontend Developer</p>
+                <p class="exp-role">Frontend Developer — Accredited Diploma</p>
               </div>
               <div class="exp-meta">
-                <span class="exp-period">Mai – Oct 2025</span>
+                <span class="exp-period">May – Oct 2025</span>
               </div>
             </div>
+            <ul class="exp-bullets">
+              <li>
+                Completed accredited program covering React, JavaScript, HTML5,
+                CSS3, component-based architecture, and responsive design. Built
+                multiple real-world projects; tools: Git, GitHub, Vite, Tailwind
+                CSS
+              </li>
+            </ul>
           </article>
 
           <hr class="item-divider" />
@@ -302,9 +275,9 @@
           <article class="exp-item">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 class="exp-company">West University of Timisoara</h3>
+                <h3 class="exp-company">West University of Timișoara</h3>
                 <p class="exp-role">
-                  Master's degree - Industrial &amp; Organizational Psychology
+                  Master's in Organizational &amp; Management Psychology
                 </p>
               </div>
               <div class="exp-meta">
@@ -318,8 +291,8 @@
           <article class="exp-item">
             <div class="exp-header">
               <div class="exp-title-group">
-                <h3 class="exp-company">West University of Timisoara</h3>
-                <p class="exp-role">Bachelor’s Degree - Psychology</p>
+                <h3 class="exp-company">West University of Timișoara</h3>
+                <p class="exp-role">Bachelor's in Psychology</p>
               </div>
               <div class="exp-meta">
                 <span class="exp-period">2001 – 2005</span>
@@ -327,16 +300,85 @@
             </div>
           </article>
         </section>
+
+        <section id="additional" class="cv-section">
+          <h2 class="section-title">Additional Experience</h2>
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">Timișoara City Hall — Tax Office</h3>
+                <p class="exp-role">Legal Advisor</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">2007 – Present</span
+                ><span class="exp-location">Timișoara</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Handled complex legal appeals against fiscal decisions; provided
+                cross-departmental advisory support and managed the
+                institutional website — demonstrating long-term reliability,
+                analytical rigor, and institutional communication skills
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Legal Compliance · Fiscal Law · Public Administration · Web
+              Management
+            </p>
+          </article>
+
+          <hr class="item-divider" />
+
+          <article class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3 class="exp-company">SC Psi Praxis SRL</h3>
+                <p class="exp-role">Psychologist</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">Sep 2005 – Aug 2007</span
+                ><span class="exp-location">Timișoara</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Conducted psychological evaluations and occupational
+                assessments; administered standardized testing instruments and
+                prepared official certifications — developing strong analytical
+                and reporting skills applied throughout later career
+              </li>
+            </ul>
+            <p class="exp-tags-label">
+              Psychological Assessment · Reporting · Occupational Health
+            </p>
+          </article>
+        </section>
+
+        <section id="recommendation" class="cv-section">
+          <h2 class="section-title">Letter of Recommendation</h2>
+          <blockquote class="recommendation-quote">
+            <p>
+              "I highly recommend her as one of the top-performing interns."
+            </p>
+            <footer>
+              — Dabu Bogdan, <em>Informatic M IT</em> &nbsp;·&nbsp; Full letter
+              available upon request
+            </footer>
+          </blockquote>
+        </section>
       </div>
+
       <aside class="col-right">
         <section id="skills" class="cv-section">
-          <h2 class="section-title">Core Skills</h2>
+          <h2 class="section-title">Tech Stack</h2>
+
           <div class="skills-group">
             <h4 class="skills-group-title">Frontend</h4>
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">JavaScript </span>
+                <span class="skill-name">JavaScript</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
@@ -346,7 +388,7 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name"> TypeScript</span>
+                <span class="skill-name">TypeScript</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
@@ -356,7 +398,7 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">React</span>
+                <span class="skill-name">React 18</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
@@ -366,7 +408,7 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">HTML</span>
+                <span class="skill-name">HTML5 / CSS3 / Sass</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
@@ -376,17 +418,17 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">CSS / Tailwind / Sass</span>
+                <span class="skill-name">Tailwind CSS</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-fill" data-level="90"></div>
+                <div class="skill-fill" data-level="88"></div>
               </div>
             </div>
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name"> Next.js</span>
+                <span class="skill-name">Next.js</span>
                 <span class="skill-level">Intermediate</span>
               </div>
               <div class="skill-bar">
@@ -403,7 +445,13 @@
                 <div class="skill-fill" data-level="75"></div>
               </div>
             </div>
+
+            <p class="skills-also">
+              React Router · React Hook Form · Zod · Shadcn/UI · Headless UI ·
+              Vite
+            </p>
           </div>
+
           <div class="skills-group">
             <h4 class="skills-group-title">Backend &amp; DB</h4>
 
@@ -419,7 +467,7 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">MongoDB</span>
+                <span class="skill-name">MongoDB / Mongoose</span>
                 <span class="skill-level">Intermediate</span>
               </div>
               <div class="skill-bar">
@@ -436,6 +484,8 @@
                 <div class="skill-fill" data-level="70"></div>
               </div>
             </div>
+
+            <p class="skills-also">PostgreSQL · Supabase · bcryptjs</p>
           </div>
 
           <div class="skills-group">
@@ -453,13 +503,40 @@
 
             <div class="skill-item">
               <div class="skill-info">
-                <span class="skill-name">Vite / VS Code</span>
+                <span class="skill-name">VS Code / Vite</span>
                 <span class="skill-level">Advanced</span>
               </div>
               <div class="skill-bar">
                 <div class="skill-fill" data-level="80"></div>
               </div>
             </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Figma</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="65"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4 class="skills-group-title">Core Strengths</h4>
+            <ul class="strengths-list">
+              <li>
+                Analytical problem-solving &amp; attention to code quality
+              </li>
+              <li>Empathy-driven UI thinking (psychology background)</li>
+              <li>
+                Clear technical communication &amp; cross-team collaboration
+              </li>
+              <li>Adaptability &amp; self-directed learning</li>
+              <li>
+                Precision under deadline (institutional advisory background)
+              </li>
+            </ul>
           </div>
 
           <div class="skills-group">
@@ -498,13 +575,12 @@
         </section>
       </aside>
     </main>
+
     <footer>
       <p class="footer-text">Claudia Popescu</p>
-      <p class="footer-email">saftaclaudia27@yahoo.com</p>
+      <a href="mailto:saftaclaudia27@yahoo.com" class="footer-email"
+        >saftaclaudia27@yahoo.com</a
+      >
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
