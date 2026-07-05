@@ -55,7 +55,7 @@ project/
 │ └── script.js
 │── assets/
 │ ├── avatar.jpeg
-│ └── CV-Claudia-Popescu.pdf
+│ └── Claudia_Popescu_CV_updated.pdf
 
 ```
 
