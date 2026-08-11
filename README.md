@@ -1,6 +1,6 @@
 # Interactive Resume – Claudia Popescu
 
-🔗 Live Demo: https://saftaclaudia.github.io/interactive-resume/
+🔗 Live Demo: https://interactive-resume-ochre.vercel.app/
 
 ## 🎯 Purpose
 
