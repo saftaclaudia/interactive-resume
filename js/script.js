@@ -54,3 +54,33 @@ skillItems.forEach(function (item) {
     item.setAttribute("data-tooltip", level + "%");
   }
 });
+
+const cursorGlow = document.querySelector(".cursor-glow");
+const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+if (cursorGlow && finePointer.matches) {
+  document.body.classList.add("cursor-active");
+  window.addEventListener("mousemove", function (e) {
+    cursorGlow.style.left = e.clientX + "px";
+    cursorGlow.style.top = e.clientY + "px";
+  });
+  const hoverTargets = document.querySelectorAll(
+    "a, .exp-item, .skill-item",
+  );
+  hoverTargets.forEach(function (el) {
+    el.addEventListener("mouseenter", function () {
+      cursorGlow.classList.add("cursor-hover");
+    });
+    el.addEventListener("mouseleave", function () {
+      cursorGlow.classList.remove("cursor-hover");
+    });
+  });
+}
+
+const headerPhoto = document.querySelector(".header-photo");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+if (headerPhoto && !reduceMotion.matches) {
+  window.addEventListener("scroll", function () {
+    const offset = Math.min(window.scrollY * 0.08, 12);
+    headerPhoto.style.transform = "translateY(" + offset + "px)";
+  });
+}

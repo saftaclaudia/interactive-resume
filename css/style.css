@@ -4,8 +4,11 @@
   --text-dark: #1a1a1a;
   --text-mid: #444444;
   --text-light: #888888;
-  --sage: #4e8b8b;
-  --sage-light: #dceef0;
+  --turquoise: #2e8283;
+  --turquoise-light: #dceef0;
+  --yellow: #a87f1f;
+  --yellow-soft: #f6dfa0;
+  --yellow-light: #fdf3d9;
   --border: #e0e0e0;
   --font-main: "Inter", sans-serif;
   --font-display: "Playfair Display", serif;
@@ -33,7 +36,7 @@ body {
 }
 
 a {
-  color: var(--sage);
+  color: var(--turquoise);
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -57,14 +60,41 @@ img {
   display: flex;
   align-items: center;
   gap: 2rem;
+  animation: fade-in-down 0.7s ease both;
 }
 
+.header-photo {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--yellow-soft),
+    var(--turquoise),
+    var(--turquoise-light),
+    var(--yellow-soft)
+  );
+  animation: ring-spin 9s linear infinite;
+}
 .photo-circle {
+  position: relative;
+  z-index: 1;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: var(--sage-light);
-  border: 2px solid var(--sage);
+  background-color: var(--turquoise-light);
+  border: 3px solid var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +105,21 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@keyframes ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header-info {
@@ -95,7 +140,7 @@ img {
 }
 .name-last {
   font-weight: 600;
-  color: var(--sage);
+  color: var(--yellow);
 }
 .header-title {
   font-size: 0.8rem;
@@ -114,9 +159,32 @@ img {
 .contact-email,
 .contact-phone,
 .contact-github {
+  position: relative;
+  display: inline-block;
   font-size: 0.78rem;
-  color: var(--sage);
+  color: var(--turquoise);
   text-decoration: none;
+}
+.contact-email::after,
+.contact-phone::after,
+.contact-github::after,
+.footer-email::after,
+.project-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: var(--yellow);
+  transition: width 0.25s ease;
+}
+.contact-email:hover::after,
+.contact-phone:hover::after,
+.contact-github:hover::after,
+.footer-email:hover::after,
+.project-link:hover::after {
+  width: 100%;
 }
 .btn-download {
   display: inline-block;
@@ -129,10 +197,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   border-radius: 3px;
-  transition: background-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease;
 }
 .btn-download:hover {
-  background-color: var(--sage);
+  background-color: var(--yellow);
 }
 .header-divider {
   max-width: var(--max-width);
@@ -170,6 +241,19 @@ img {
   padding-bottom: 0.6rem;
   margin-bottom: 1.2rem;
   border-bottom: 1.5px solid var(--border);
+}
+.section-title::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, var(--yellow), var(--turquoise));
+  border-radius: 2px;
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cv-section.visible .section-title::before {
+  width: 28px;
 }
 .item-divider {
   border: none;
@@ -254,9 +338,11 @@ img {
   margin-top: 0.4rem;
 }
 .project-link {
+  position: relative;
+  display: inline-block;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--sage) !important;
+  color: var(--turquoise) !important;
   white-space: nowrap;
 }
 .project-link:hover {
@@ -266,8 +352,8 @@ img {
   display: inline-block;
   margin-top: 0.5rem;
   font-size: 0.72rem;
-  color: var(--sage);
-  background-color: var(--sage-light);
+  color: var(--yellow);
+  background-color: var(--yellow-light);
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
   letter-spacing: 0.04em;
@@ -310,9 +396,9 @@ img {
 .skill-fill {
   height: 100%;
   width: 0;
-  background-color: var(--sage);
+  background: linear-gradient(90deg, var(--turquoise), var(--yellow-soft));
   border-radius: 2px;
-  transition: width 1s ease-out;
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 footer {
   max-width: var(--max-width);
@@ -331,12 +417,14 @@ footer {
   font-style: italic;
 }
 .footer-email {
+  position: relative;
+  display: inline-block;
   font-size: 0.75rem;
   color: var(--text-light);
   letter-spacing: 0.02rem;
 }
 .footer-email:hover {
-  color: var(--sage);
+  color: var(--turquoise);
 }
 
 @media (max-width: 680px) {
@@ -371,7 +459,7 @@ html {
   scroll-padding-top: 1rem;
 }
 ::selection {
-  background-color: var(--sage-light);
+  background-color: var(--yellow-light);
   color: var(--text-dark);
 }
 #navbar.scrolled {
@@ -384,19 +472,21 @@ html {
   border-left: 2px solid transparent;
   border-radius: 0 6px 6px 0;
   transition:
-    border-color 0.25s ease,
-    background-color 0.25s ease,
-    transform 0.25s ease;
+    border-color 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   margin-left: -1rem;
 }
 .exp-item:hover {
-  border-left-color: var(--sage-light);
-  background-color: var(--sage-light);
+  border-left-color: var(--yellow-soft);
+  background-color: var(--yellow-light);
   transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(168, 127, 31, 0.1);
 }
 
 .exp-item:hover + .item-divider {
-  border-top-color: var(--sage-light);
+  border-top-color: var(--yellow-soft);
 }
 
 .cv-section {
@@ -435,16 +525,20 @@ html {
 
 .exp-project {
   font-size: 0.78rem;
-  color: var(--sage);
+  color: var(--turquoise);
   font-style: italic;
   margin-top: 0.2rem;
 }
 
 .recommendation-quote {
-  border-left: 3px solid var(--sage);
+  border-left: 3px solid var(--yellow);
   padding: 0.8rem 1rem;
-  background-color: var(--sage-light);
+  background-color: var(--yellow-light);
   border-radius: 0 6px 6px 0;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.recommendation-quote:hover {
+  transform: translateX(3px);
 }
 .recommendation-quote p {
   font-size: 0.9rem;
@@ -476,7 +570,7 @@ html {
   content: "▸";
   position: absolute;
   left: 0;
-  color: var(--sage);
+  color: var(--turquoise);
   font-size: 0.7rem;
 }
 
@@ -496,18 +590,69 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--sage);
+  background-color: var(--yellow);
   transform: translateX(-101%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .btn-download:hover::before {
   transform: translateX(0);
 }
 
+.btn-download:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(168, 127, 31, 0.25);
+}
+
 .btn-download span {
   position: relative;
   z-index: 1;
+}
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(168, 127, 31, 0.45),
+    rgba(168, 127, 31, 0) 70%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    opacity 0.25s ease;
+  opacity: 0;
+  z-index: 9999;
+}
+body.cursor-active .cursor-glow {
+  opacity: 1;
+}
+.cursor-glow.cursor-hover {
+  width: 44px;
+  height: 44px;
+  background: radial-gradient(
+    circle,
+    rgba(168, 127, 31, 0.3),
+    rgba(168, 127, 31, 0) 70%
+  );
+}
+@media (hover: none), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor-glow,
+  .header-photo::before,
+  .cv-header {
+    animation: none;
+  }
 }
 
 @media print {
@@ -520,7 +665,9 @@ html {
     padding: 1rem 0;
   }
   .btn-download,
-  .btn-download::before {
+  .btn-download::before,
+  .cursor-glow,
+  .header-photo::before {
     display: none;
   }
   .cv-main {
