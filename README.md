@@ -15,13 +15,18 @@ The goal of this project was to go beyond a traditional CV and build a visually 
 
 ## ✨ Features
 
-- 🎯 **Animated skill bars** triggered on scroll using IntersectionObserver
-- 🎬 **Section reveal animations** with staggered timing
+- 🎨 **Pastel turquoise & yellow accent palette** on a warm neutral background
+- 🌀 **Rotating gradient ring** around the profile photo
+- ✨ **Custom cursor glow** that reacts on hover (desktop only, respects reduced motion)
+- 🎯 **Animated skill bars** with a turquoise-to-yellow gradient, triggered on scroll using IntersectionObserver
+- 🎬 **Section reveal animations** with staggered timing and an animated accent underline on section titles
+- 🖱️ **Animated link underlines** and refined hover transitions throughout
+- 🌊 **Subtle parallax** on the profile photo while scrolling
 - 📌 **Dynamic navbar styling** on scroll
 - 💬 **Skill tooltips** displaying proficiency levels
 - 📄 **Downloadable PDF resume**
 - 📱 **Fully responsive design**
-- 🎨 Clean, minimal UI with a focus on readability and UX
+- 🖨️ **Print-friendly stylesheet** for clean PDF export
 
 ---
 
@@ -38,7 +43,9 @@ The goal of this project was to go beyond a traditional CV and build a visually 
 
 - IntersectionObserver for efficient scroll-based animations
 - Dataset API (`data-*`) for dynamic UI control
-- Event handling (`scroll`, DOM events)
+- Event handling (`scroll`, `mousemove`, DOM events)
+- CSS custom properties for a centralized, themeable color system
+- `matchMedia` feature detection (`hover`/`pointer`, `prefers-reduced-motion`) for accessible, device-aware interactivity
 - Responsive layout using CSS Grid & Flexbox
 - Progressive enhancement & performance optimization
 
@@ -55,7 +62,7 @@ project/
 │ └── script.js
 │── assets/
 │ ├── avatar.jpeg
-│ └── Claudia_Popescu_CV_updated.pdf
+│ └── cv.pdf
 
 ```
 
@@ -79,6 +86,6 @@ Claudia Popescu
 Frontend Developer
 
 GitHub: https://github.com/saftaclaudia
-Portfolio: https://saftaclaudia.github.io/my-portfolio/
+Portfolio: https://claudiapopescu-portfolio.vercel.app
 
 ---
